@@ -14,11 +14,11 @@ import './App.scss';
 const App = () => {
   return (
     <div className="app">
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
       <About />
-      <Skills />
       <Work />
+      <Skills />
       <Testimonial />
       <Footer />
     </div>

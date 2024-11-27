@@ -21,8 +21,9 @@
   align-items: center;
 
   img {
-    width: 90px;
-    height: 20px;
+    margin-top: -10px;
+    width: 150px;
+    height: 60px;
     
     //just testing for very big devices.
     @media screen and (min-width: 2000px) {

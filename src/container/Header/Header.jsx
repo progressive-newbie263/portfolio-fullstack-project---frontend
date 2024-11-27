@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+
+import { AppWrap } from '../../wrapper';
+
 import './Header.scss';
 
 const scaleVariants = {
@@ -26,7 +29,7 @@ const Header = () => {
       >
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
-            <span>👋Hello</span>
+            <span>👋</span>
 
             <div style={{ marginLeft: 20 }}>
               <p className='p-text'>Hello, I am</p>
@@ -48,8 +51,8 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__header-img'
       >
-        {/* ảnh pfp của dev/user */}
-        <img src={images.profile} alt='profile-bg'></img>
+        {/* ảnh pfp của dev/user. DÙng remove.bg để xoá ảnh nền và chỉ để lại ảnh người. */}
+        <img src={images.briar} alt='profile-bg' />
         
         {/* tạo nền động cho image, 1 hình tròn xám phía sau lưng img của user. */}
         <motion.img
@@ -57,7 +60,7 @@ const Header = () => {
           transition={{ duration: 1, ease: 'easeInOut' }}
           src={images.circle}
           alt="profile-circle"
-          className="overlay-circle"
+          className="overlay_circle"
         />
       </motion.div>
 
@@ -77,4 +80,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default AppWrap(Header, 'home');
