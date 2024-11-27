@@ -1,5 +1,7 @@
 xem live tại: https://nvquangg-portfolio.netlify.app/
 
+đây là code frontend cho portfolio của tôi.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
