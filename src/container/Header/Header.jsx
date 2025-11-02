@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
-
 import { AppWrap } from '../../wrapper';
-
 import './Header.scss';
 
 const scaleVariants = {
@@ -17,11 +15,10 @@ const scaleVariants = {
   }
 }
 
-
 const Header = () => {
   return (
     <div id='home' className='app__header app__flex'>
-      {/*show component tạo tên/ nghề nghiệp (?)*/}
+      {/* Thông tin giới thiệu */}
       <motion.div
         whileInView={{ x:[-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -30,7 +27,6 @@ const Header = () => {
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
             <span>👋</span>
-
             <div style={{ marginLeft: 20 }}>
               <p className='p-text'>Hello, I am</p>
               <h1 className='head-text'>Quang</h1>
@@ -44,29 +40,28 @@ const Header = () => {
         </div>
       </motion.div>
 
-
-      {/* show component tạo ảnh của developer */}
+      {/* Ảnh đại diện */}
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__header-img'
       >
-        {/* ảnh pfp của dev/user. DÙng remove.bg để xoá ảnh nền và chỉ để lại ảnh người. */}
-        <img src={images.briar} alt='profile-bg' />
-        
-        {/* tạo nền động cho image, 1 hình tròn xám phía sau lưng img của user. */}
-        <motion.img
+        {/* Ảnh profile tròn */}
+        <img src={images.pfp} alt='profile-bg' className='profile-img' />
+
+        {/* Hình tròn nền động */}
+        {/* <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
           src={images.circle}
           alt="profile-circle"
           className="overlay_circle"
-        />
+        /> */}
       </motion.div>
 
-
+      {/* Các icon công nghệ */}
       <motion.div
-        variant={scaleVariants}
+        variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className='app__header-circles'
       >

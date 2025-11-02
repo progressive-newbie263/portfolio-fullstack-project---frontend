@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <>
       <h2 className='head-text'>
-        My Creative <span>Portfolio </span>Section
+        Một số sản phẩm tôi <span>đã làm</span> hoặc tham gia <span>phát triển</span>
       </h2>
 
       <div className='app__work-filter'>

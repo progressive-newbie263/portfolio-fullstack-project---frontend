@@ -40,7 +40,7 @@ const Footer = () => {
   return (
     <>
       <h2 className='head-text'>
-        Contact Me Via:
+        Liên hệ với tôi thông qua:
       </h2>
 
       <div className='app__footer-cards'>
@@ -49,8 +49,8 @@ const Footer = () => {
           <img src={images.email} alt='email' />
           
           {/* href mailto trỏ đến địa chỉ cần thiết. */}
-          <a href='mailto:placeholder@gmail.com' className='p-text'>
-            placeholder@gmail.com
+          <a href='mailto:jack26032004@gmail.com' className='p-text'>
+            jack26032004@gmail.com
           </a>
         </div>
 
@@ -59,8 +59,8 @@ const Footer = () => {
           <img src={images.mobile} alt='email' />
           
           {/* href mailto trỏ đến địa chỉ cần thiết. */}
-          <a href='tel: +69 (123) 456-789' className='p-text'>
-            0123456789
+          <a href='tel: +84 (94) 755-4629' className='p-text'>
+            094 755 4629
           </a>
         </div>
       </div>
@@ -89,7 +89,7 @@ const Footer = () => {
             />
           </div>
           <button type='button' className='p-text' onClick={handleSubmit}>
-            {loading ? 'Sending' : 'Send Message'}
+            {loading ? 'Đang gửi...' : 'Gửi tin nhắn'}
           </button>
         </div>
       : 

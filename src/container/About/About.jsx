@@ -20,7 +20,7 @@ const About = () => {
   return (
     <>
       <h2 className='head-text'>
-        I know that <span>Good development </span><br />means <span>Good business</span>
+        Công nghệ tôi đang <span>sử dụng</span> và <span>Học hỏi</span> 
       </h2>
 
       <div className='app__profiles'>
@@ -29,7 +29,7 @@ const About = () => {
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}
-            className='app__profile-item'
+            className='app__profile-item hover:cursor-pointer duration-250'
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />

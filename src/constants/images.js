@@ -38,6 +38,8 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import pfp from '../assets/pfp.png';
+
 //có thể export default cả đống này luôn, vẫn chạy ngon. Nhưng bị cái warning. 
 //Nên đặt nó const images, rồi export default cái images đó ra
 const images = {
@@ -77,6 +79,7 @@ const images = {
   nb,
   skype,
   spotify,
+  pfp,
 };
 
 export default images;
