@@ -1,4 +1,4 @@
-xem live tại: https://nvquangg-portfolio.netlify.app/
+xem live tại: https://nvquangg-portfolio.netlify.app/](https://portfolio-mqkgly1bw-progressive-newbie263s-projects.vercel.app/
 
 đây là code frontend cho portfolio của tôi.
 
